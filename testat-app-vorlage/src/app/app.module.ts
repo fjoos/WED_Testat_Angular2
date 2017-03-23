@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {CoreModule} from "./core/core.module";
-import {WelcomeModule} from "./welcome/welcome.module";
+import {CoreModule} from './core/core.module';
+import {WelcomeModule} from './welcome/welcome.module';
 
 import {AppComponent} from './app.component';
 
