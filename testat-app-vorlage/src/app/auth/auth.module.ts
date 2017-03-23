@@ -8,11 +8,14 @@ import {AuthResourceService, AuthRequestOptions} from "./resources";
 import {LoginComponent, LogoutComponent,
   RegisterComponent} from "./components";
 import {SharedModule} from "../shared/shared.module";
+import {AuthGuard} from "./services/auth-guard.service";
+import {LoggedInGuard} from "./services/loggedin-guard.service";
 
 @NgModule({
   declarations: [
     // TODO: Add declarations here, if additional components are placed within the Auth module
     LoginComponent, LogoutComponent, RegisterComponent
+
   ],
   imports: [
     SharedModule
@@ -21,7 +24,7 @@ import {SharedModule} from "../shared/shared.module";
     // TODO: Add declarations here, if additional components are placed within the Auth module
     LoginComponent, LogoutComponent, RegisterComponent
   ],
-  providers: [ ]
+  providers: [ AuthGuard, LoggedInGuard ]
 })
 export class AuthModule {
   static forRoot(config?: {}): ModuleWithProviders {

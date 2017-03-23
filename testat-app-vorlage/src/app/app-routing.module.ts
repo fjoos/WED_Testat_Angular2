@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth/services/auth-guard.service';
+import { LoggedInGuard } from './auth/services/loggedin-guard.service';
+
 
 const appRoutes: Routes = [
 
