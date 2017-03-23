@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthModule } from './auth/auth.module';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {RegisterComponent } from './auth/components/register.component';
+import { LoggedInGuard } from './auth/services/loggedin-guard.service';
+import { AuthGuard } from './auth/services/auth-guard.service';
 
 const appRoutes: Routes = [
 
@@ -10,7 +11,7 @@ const appRoutes: Routes = [
   //{ path: 'dashboard', component: DashboardModule, canActivate=[]},
 
   // TODO: Add routing of eagerly loaded modules here...
-  { path: '', redirectTo: '/welcome', pathMatch: 'full' }
+  { path: '', redirectTo: '/welcome', pathMatch: 'full', canActivate: [LoggedInGuard]}
 ];
 
 @NgModule({
