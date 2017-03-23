@@ -29,7 +29,6 @@ export class LoginComponent implements OnInit {
     this.backUrl = "";
     this.autSvc.authenticatedUserChange.subscribe(
       (credentials) => {
-        debugger;
         this.isProcessing = false;
         if (credentials) {
           if (this.backUrl) {
@@ -42,7 +41,6 @@ export class LoginComponent implements OnInit {
   }
 
   public doLogin(f: NgForm):boolean {
-    debugger;
     if (f.valid) {
       this.isProcessing = true;
       this.autSvc.login(new LoginInfo(f.value.login, f.value.password));
