@@ -7,10 +7,9 @@ import {RegisterComponent } from './auth/components/register.component';
 const appRoutes: Routes = [
 
   // TODO: Add routing of lazy loaded dashboard Module (with guards) here...
-  //{ path: 'login', canLoad: [AuthModule] },
+  //{ path: 'dashboard', component: DashboardModule, canActivate=[]},
 
   // TODO: Add routing of eagerly loaded modules here...
-  //{ path: 'dashboard', component: DashboardModule},
   { path: '', redirectTo: '/welcome', pathMatch: 'full' }
 ];
 
