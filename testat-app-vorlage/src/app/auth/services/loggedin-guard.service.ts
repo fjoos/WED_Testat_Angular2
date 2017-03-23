@@ -16,5 +16,4 @@ export class LoggedInGuard implements CanActivate {
     }
     return true;
   }
-
 }
