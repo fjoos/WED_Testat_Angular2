@@ -10,7 +10,7 @@ export class AuthGuard implements CanLoad {
   constructor(private auth: AuthService, private router: NavigationService) {}
 
   canLoad() {
-    if (this.auth.loggedIn()) {
+    if (!this.auth.loggedIn()) {
       this.router.goToHome();
       return false;
     }
