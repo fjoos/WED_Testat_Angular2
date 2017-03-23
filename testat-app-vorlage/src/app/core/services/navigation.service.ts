@@ -13,6 +13,7 @@ export class NavigationService {
   }
 
   public goToDashboard():void {
+    debugger;
     this.goToUrl("/dashboard"); // TODO: adjust routing according this URL
   }
 

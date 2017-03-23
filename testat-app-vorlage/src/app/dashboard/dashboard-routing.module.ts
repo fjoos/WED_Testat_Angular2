@@ -8,7 +8,7 @@ const appRoutes: Routes = [
     component: DashboardComponent, // TODO: Add initial router outlet dashboard component...
     children: [
       // TODO: Add routing path for dashboard here...
-      { path: '/transactions', loadChildren: 'app/dashboard/dashboard.module#DashboardModule' },
+      { path: 'transactions' },
 
     ]
   }
