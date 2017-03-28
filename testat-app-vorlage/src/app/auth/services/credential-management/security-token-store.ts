@@ -7,8 +7,7 @@ import {Injectable} from '@angular/core';
 export class SecurityTokenStore {
   private token:SecurityToken;
 
-  constructor() {
-  }
+  constructor() {}
 
   public get storedValue():SecurityToken {
     return this.token;
@@ -16,6 +15,11 @@ export class SecurityTokenStore {
 
   public set storedValue(value:SecurityToken) {
     this.token = value;
+    localStorage.setItem('currentUser', (value) ? JSON.stringify(value) : null);
+  }
+
+  public removeLocalToken(){
+    localStorage.removeItem('currentUser');
   }
 }
 

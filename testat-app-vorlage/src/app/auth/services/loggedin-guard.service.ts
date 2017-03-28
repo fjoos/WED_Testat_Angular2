@@ -12,8 +12,8 @@ export class LoggedInGuard implements CanActivate {
   canActivate() {
     if (this.auth.loggedIn()) {
       this.router.goToDashboard();
-      return false;
+      return true;
     }
-    return true;
+    return false;
   }
 }

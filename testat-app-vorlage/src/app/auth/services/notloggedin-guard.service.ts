@@ -5,16 +5,16 @@ import {NavigationService} from "../../core";
 
 
 @Injectable()
-export class AuthGuard implements CanLoad {
+export class NotLoggedInGuard implements CanLoad {
 
   constructor(private auth: AuthService, private router: NavigationService) {}
 
   canLoad() {
     if (!this.auth.loggedIn()) {
       this.router.goToHome();
-      return false;
+      return true;
     }
-    return true;
+    return false;
   }
 
 }

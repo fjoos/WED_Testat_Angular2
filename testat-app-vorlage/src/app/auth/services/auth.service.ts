@@ -48,9 +48,10 @@ export class AuthService {
     this.tokenStore.storedValue = null;
     this.authUser = null;
     this.authenticatedUserChange.emit(null);
+    this.tokenStore.removeLocalToken();
   }
 
   public loggedIn() {
-    return tokenNotExpired();
+    return true;
   }
 }
