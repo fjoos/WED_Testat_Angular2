@@ -21,6 +21,11 @@ export class SecurityTokenStore {
   public removeLocalToken(){
     localStorage.removeItem('currentUser');
   }
+
+  public get localToken(){
+    return localStorage.getItem('currentUser');
+  }
+
 }
 
 export interface SecurityToken {
