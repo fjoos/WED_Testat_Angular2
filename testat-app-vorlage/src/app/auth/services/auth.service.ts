@@ -1,6 +1,5 @@
 import {Injectable, EventEmitter} from '@angular/core';
 import {isBlank} from "@angular/core/src/facade/lang";
-import { tokenNotExpired } from 'angular2-jwt';
 
 import {AuthResourceService} from "../resources";
 import {LoginInfo, RegistrationInfo, Credential, Account} from "../models";
