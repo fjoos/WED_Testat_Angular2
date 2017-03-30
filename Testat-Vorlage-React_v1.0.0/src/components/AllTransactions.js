@@ -12,11 +12,10 @@ import { getAccountDetails, getAccount, transfer, getTransactions } from '../api
 
  import { getAccountDetails, getAccount, transfer, getTransactions } from '../api'
  */
-
-
 import React from 'react'
-import { Button } from 'semantic-ui-react'
+import { Button, Grid, Segment} from 'semantic-ui-react'
 import type { User } from '../api'
+import moment from "moment";
 
 export type Props = {
   token: string,
@@ -35,10 +34,46 @@ class AllTransactions extends React.Component {
     return (
       <div>All Transactions
 
-        <Button>asdfaf</Button>
-          {this.state.transactions.map(({amount})=>
-          <h1>{amount}</h1>
+        <Segment>
+          <Grid columns='equal' stackable>
+            <Grid.Column>
+            </Grid.Column>
+            <Grid.Column>
+              Von
+            </Grid.Column>
+            <Grid.Column>
+              Nach
+            </Grid.Column>
+            <Grid.Column>
+              Betrag
+            </Grid.Column>
+            <Grid.Column>
+              Saldo
+            </Grid.Column>
+          </Grid>
+
+          {this.state.transactions.map(({from, target, amount, total, date})=>
+
+                <Grid columns='equal' stackable>
+                  <Grid.Column>
+                      {date}-
+                  </Grid.Column>
+                  <Grid.Column>
+                      {from}
+                  </Grid.Column>
+                  <Grid.Column>
+                      {target}
+                  </Grid.Column>
+                  <Grid.Column>
+                      {amount}
+                  </Grid.Column>
+                  <Grid.Column>
+                      {total}
+                  </Grid.Column>
+                </Grid>
+
           )}
+        </Segment>
       </div>
     )
   }
