@@ -15,11 +15,7 @@ export class SecurityTokenStore {
 
   public set storedValue(value:SecurityToken) {
     this.token = value;
-    if(value != null){
-      localStorage.setItem('currentUser', (value) ? JSON.stringify(value) : null);
-    }else{
-      localStorage.removeItem('currentUser');
-    }
+    localStorage.setItem('currentUser', (value) ? JSON.stringify(value) : null);
   }
 
   public get localToken(){

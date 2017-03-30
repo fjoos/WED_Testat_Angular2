@@ -52,6 +52,7 @@ export class AuthService {
   }
 
   public loggedIn() {
-    return this.tokenStore.localToken;
+    console.log("loggedin: " + this.tokenStore.localToken);
+    return this.tokenStore.localToken != null;
   }
 }

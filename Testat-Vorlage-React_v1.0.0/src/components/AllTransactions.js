@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react'
-
+import { Button } from 'semantic-ui-react'
 import type { User } from '../api'
 
 export type Props = {
@@ -15,7 +15,12 @@ class AllTransactions extends React.Component {
   
   render() {    
     return (
-      <div>All Transactions</div>
+      <div>All Transactions
+
+        <Button>asdfaf</Button>
+
+      </div>
+
     )
   }
 }

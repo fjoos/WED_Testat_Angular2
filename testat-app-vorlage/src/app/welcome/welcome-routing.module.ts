@@ -14,7 +14,7 @@ const appRoutes: Routes = [
     canActivate: [LoggedInGuard],
     //canLoad: [NotLoggedInGuard],
     children: [
-      { path: '', component: LoginComponent },
+      { path: '', component: LoginComponent},
       { path: 'register', component: RegisterComponent}
     ]
   }

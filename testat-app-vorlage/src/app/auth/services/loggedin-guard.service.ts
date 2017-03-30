@@ -12,12 +12,12 @@ export class LoggedInGuard implements CanActivate {
   canActivate() {
 
     console.log("canActive");
-    if (this.auth.loggedIn()) {
+    if (!this.auth.loggedIn()) {
       this.router.goToDashboard();
-      console.log("canActive: true");
-      return true;
+      console.log("canActive: false");
+      return false;
     }
-    console.log("canActive: false");
-    return false;
+    console.log("canActive: true");
+    return true;
   }
 }
