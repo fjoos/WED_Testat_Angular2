@@ -41,19 +41,17 @@ export class AuthService {
         this.authUser = !isBlank(data)? data.owner : null;
         this.authenticatedUserChange.emit(this.authenticatedUser);
       } );
+    console.log("login-------");
   }
 
   public logout():void {
     this.tokenStore.storedValue = null;
     this.authUser = null;
     this.authenticatedUserChange.emit(null);
-    this.tokenStore.removeLocalToken();
+    console.log("logout-----");
   }
 
   public loggedIn() {
-    console.log(this.tokenStore.localToken);
-    console.log(this.authUser);
-
-    return this.tokenStore.localToken != null;
+    return this.tokenStore.localToken;
   }
 }
