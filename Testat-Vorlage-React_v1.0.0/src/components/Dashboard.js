@@ -2,7 +2,9 @@
 
 import React from 'react'
 import { getAccountDetails, getAccount, transfer, getTransactions } from '../api'
-import { Dropdown, Grid, Segment } from 'semantic-ui-react'
+import { Dropdown, Grid, Segment, Table, Button, Form } from 'semantic-ui-react'
+import moment from "moment"
+
 
 /*
   Use the api functions to call the API server. For example, the transactions
@@ -12,9 +14,9 @@ import { Dropdown, Grid, Segment } from 'semantic-ui-react'
  .then(({result: transactions}) =>
  this.setState({transactions})
  );
-    
-*/
+ {/* Links inside the App are created using the react-router's Link component *///}
 
+//*/
 
 export type Props = {
   token: string,
@@ -35,80 +37,89 @@ class Dashboard extends React.Component {
     const kontoDescription = this.props.user.accountNr+'(CHF: '+this.state.kontostand+'.-)';
     return (
         <div>
-            <header>Kontoübersicht {this.props.user.accountNr}</header>
-            <form>
-                <header>Neue Zahlung</header>
-                <div>
-                    <label>Von</label>
-                    <Dropdown text={kontoDescription}
-                              value={this.props.user.accountNr}
-                              options={[{key:'1', value:this.state.meinKonto, text:kontoDescription}]}
-                              type="text"/>
-                </div>
-                <div>
-                    <label>Nach</label>
-                    <input value={this.state.zielKonto}
-                           type="text"
-                           onChange={this.handleTransactionTargetChange}
-                           placeholder="Zielkontonummer"/>
-                </div>
-                <div>
-                    <label>Betrag</label>
-                    <input value={this.state.betrag}
-                           type="number"
-                           onChange={this.handleAmountChange}/>
-                </div>
-                <div>
-                    <button type="submit">Betrag Überweisen</button>
-                </div>
-            </form>
 
-            <Segment>
-                <header>Letzte Zahlungen</header>
-                <Grid columns='equal' stackable>
+            <Grid divided='vertically'>
+                <Grid.Row columns={1}>
                     <Grid.Column>
+                        <header>Kontoübersicht {this.props.user.accountNr}</header>
+                    </Grid.Column>
+                </Grid.Row>
+                <Grid.Row columns={2}>
+                    <Grid.Column>
+                        <header>Neue Zahlung</header>
+                        <Segment inverted>
+                            <Form onSubmit={this.handleTransactionFromTo} inverted>
+                                <Form.Group widths='equal'>
+                                    <Form.Dropdown label='Von'
+                                                   text={kontoDescription}
+                                                   value={this.props.user.accountNr}
+                                                   options={[{key:'1', value:this.state.meinKonto, text:kontoDescription}]}
+                                                   type="text"/>
+                                    <Form.Input label='Nach'
+                                                value={this.state.zielKonto}
+                                                type="text"
+                                                onChange={this.handleTransactionTargetChange}
+                                                placeholder="Zielkontonummer"/>
+                                    <Form.Input label='Betrag'
+                                                value={this.state.betrag}
+                                                type="number"
+                                                onChange={this.handleAmountChange}/>
+                                </Form.Group>
+                                <Button type='submit'>Bestätigen</Button>
+                            </Form>
+                        </Segment>
                     </Grid.Column>
                     <Grid.Column>
-                        Von
+                        <header>Letzte Transaktionen</header>
+                        <Table singleLine>
+                            <Table.Header>
+                                <Table.Row>
+                                    <Table.HeaderCell>Datum</Table.HeaderCell>
+                                    <Table.HeaderCell>Von</Table.HeaderCell>
+                                    <Table.HeaderCell>Nach</Table.HeaderCell>
+                                    <Table.HeaderCell>Batrag</Table.HeaderCell>
+                                    <Table.HeaderCell>Saldo</Table.HeaderCell>
+                                </Table.Row>
+                            </Table.Header>
+                            {this.state.transactions.map(({from, target, amount, total, date})=>
+                                <Table.Body>
+                                    <Table.Row>
+                                        <Table.Cell>{moment(date).format("LL")}</Table.Cell>
+                                        <Table.Cell>{from}</Table.Cell>
+                                        <Table.Cell>{target}</Table.Cell>
+                                        <Table.Cell>{amount}</Table.Cell>
+                                        <Table.Cell>{total}</Table.Cell>
+                                    </Table.Row>
+                                </Table.Body>
+                            )}
+                        </Table>
                     </Grid.Column>
-                    <Grid.Column>
-                        Nach
-                    </Grid.Column>
-                    <Grid.Column>
-                        Betrag
-                    </Grid.Column>
-                    <Grid.Column>
-                        Saldo
-                    </Grid.Column>
-                </Grid>
-                {this.state.transactions.map(({from, target, amount, total, date})=>
+                </Grid.Row>
+            </Grid>
 
-                    <Grid columns='equal' stackable>
-                        <Grid.Column>
-                            {date}-
-                        </Grid.Column>
-                        <Grid.Column>
-                            {from}
-                        </Grid.Column>
-                        <Grid.Column>
-                            {target}
-                        </Grid.Column>
-                        <Grid.Column>
-                            {amount}
-                        </Grid.Column>
-                        <Grid.Column>
-                            {total}
-                        </Grid.Column>
-                    </Grid>
-
-                )}
-            </Segment>
 
         </div>
 
 
     )
   }
+
+    handleTransactionFromTo = (event) => {
+      event.preventDefault();
+      transfer(this.state.zielKonto, this.state.betrag, this.props.token)
+          .then(result => {
+              console.log(result);
+              getTransactions(this.props.token)
+                      .then(({result: transactions}) =>
+                          this.setState({transactions})
+                      );
+              getAccountDetails(this.props.token)
+                  .then(({amount}) =>
+                      this.setState({kontostand: amount})
+                  );
+          })
+          .catch(console.log("There was an Error!"))
+    };
 
     handleTransactionTargetChange = (event) => {
       this.setState({zielKonto: event.target.value})
@@ -117,15 +128,16 @@ class Dashboard extends React.Component {
     handleAmountChange = (event) => {
       this.setState({betrag: event.target.value})
     };
+
     componentDidMount() {
         getAccountDetails(this.props.token)
             .then(({amount}) =>
                 this.setState({kontostand: amount})
             );
-            getTransactions(this.props.token)
-                .then(({result: transactions}) =>
-                    this.setState({transactions})
-                )
+        getTransactions(this.props.token)
+            .then(({result: transactions}) =>
+                this.setState({transactions})
+            )
 
     }
 

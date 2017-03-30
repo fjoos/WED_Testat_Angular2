@@ -8,6 +8,7 @@ import {
   withRouter
 } from 'react-router-dom'
 
+import {Menu} from 'semantic-ui-react'
 import Home from './components/Home'
 import Login from './components/Login'
 import Signup from './components/Signup'
@@ -25,6 +26,7 @@ class App extends React.Component {
     isAuthenticated: boolean,
     token: ?string,
     user: ?User,
+    activeItem: 'home'
   };
   
   constructor(props: any) {
@@ -62,25 +64,67 @@ class App extends React.Component {
     sessionStorage.removeItem('token')
     sessionStorage.removeItem('user')
     callback()
-  }
-  
-  render() {
-    const { isAuthenticated, user, token } = this.state
-        
-    const MenuBar = withRouter(({ history, location: { pathname } }) => {
+  };
+
+
+    handleItemClick = (e, { name }) => {
+      this.setState({ activeItem: name });
+    }
+
+    render() {
+    const { isAuthenticated, user, token, activeItem } = this.state
+
+
+      const MenuBar = withRouter(({ history, location: { pathname } }) => {
       if(isAuthenticated && user) {
         return (
-          <nav>
-            <span>{user.firstname} {user.lastname} &ndash; {user.accountNr}</span>
-            {/* Links inside the App are created using the react-router's Link component */}
-            <Link to="/">Home</Link>
-            <Link to="/dashboard">Kontoübersicht</Link>
-            <Link to="/transactions">Zahlungen</Link>
-            <a href="/logout" onClick={(event) => {
+            <Menu>
+              <Menu.Item
+                  name='home'
+                  active={activeItem === 'home'}
+                  content='Home'
+                  onClick={(event) => {
+                    event.preventDefault()
+                    this.handleItemClick
+                    history.push('/')
+                  }}
+              />
+
+              <Menu.Item
+                  name='kontoübersicht'
+                  active={activeItem === 'kontoübersicht'}
+                  content='Kontoübersicht'
+                  onClick={(event) => {
+                    event.preventDefault()
+                    this.handleItemClick
+                    history.push('/dashboard')
+                  }}
+              />
+
+              <Menu.Item
+                  name='zahlungen'
+                  active={activeItem === 'zahlungen'}
+                  content='Zahlungen'
+                  onClick={(event) => {
+                    event.preventDefault()
+                    this.handleItemClick
+                    history.push('/transactions')
+                  }}
+              />
+              <Menu.Menu position='right'>
+                <Menu.Item
+                    name='logout'
+                    active={activeItem === 'logout'}
+                    content={user.firstname +' '+ user.lastname+', Logout'}
+                    onClick={(event) => {
               event.preventDefault()
               this.signout(() => history.push('/'))
-            }}>Logout {user.firstname} {user.lastname}</a>
-          </nav>
+            }}
+                />
+              </Menu.Menu>
+
+            </Menu>
+
         )
       } else {
         return null
