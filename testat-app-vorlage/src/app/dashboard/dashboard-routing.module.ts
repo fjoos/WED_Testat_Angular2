@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard.component';
-import {LogoutComponent} from "../auth/components";
+import { LogoutComponent } from "../auth/components";
 import { TransactionComponent } from "./components/transaction.component";
 
 
@@ -12,7 +12,7 @@ const appRoutes: Routes = [
     children: [
       // TODO: Add routing path for dashboard here...
       { path: 'transactions', component: TransactionComponent },
-      { path: '', component: LogoutComponent },
+      { path: '', component: HomeComponent },
     ]
   }
 ];
