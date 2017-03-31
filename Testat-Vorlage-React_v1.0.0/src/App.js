@@ -135,7 +135,7 @@ class App extends React.Component {
       <Router>
         <div>
           <MenuBar/>
-          <Route exact path="/" render={props => <Home {...props} isAuthenticated={isAuthenticated} />}/>
+          <Route exact path="/" render={props => <Home {...props} isAuthenticated={isAuthenticated}/>}/>
           <Route path="/login" render={props => <Login {...props} authenticate={this.authenticate} />}/>
           <Route path="/signup" component={Signup}/>
           {/* 

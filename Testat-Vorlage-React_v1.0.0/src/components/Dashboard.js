@@ -41,12 +41,12 @@ class Dashboard extends React.Component {
             <Grid divided='vertically'>
                 <Grid.Row columns={1}>
                     <Grid.Column>
-                        <header>Kontoübersicht {this.props.user.accountNr}</header>
+                        <header><h1>Kontoübersicht {this.props.user.accountNr}</h1></header>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row columns={2}>
                     <Grid.Column>
-                        <header>Neue Zahlung</header>
+                        <header><h2>Neue Zahlung</h2></header>
                         <Segment inverted>
                             <Form onSubmit={this.handleTransactionFromTo} inverted>
                                 <Form.Group widths='equal'>
@@ -70,7 +70,7 @@ class Dashboard extends React.Component {
                         </Segment>
                     </Grid.Column>
                     <Grid.Column>
-                        <header>Letzte Transaktionen</header>
+                        <header><h2>Letzte Transaktionen</h2></header>
                         <Table singleLine>
                             <Table.Header>
                                 <Table.Row>
