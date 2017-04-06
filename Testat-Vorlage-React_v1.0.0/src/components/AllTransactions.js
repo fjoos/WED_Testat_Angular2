@@ -29,6 +29,7 @@ class AllTransactions extends React.Component {
         fromDate: '',
         toDate: '',
         iteration: 0,
+        iterationEnd: 0,
         resultCount: 0,
         selectedMonth: '',
         selectedYear: ''
@@ -97,15 +98,15 @@ class AllTransactions extends React.Component {
               </Table>
           </Grid.Column>
 
-
+            <CheckTransactions name={this.state.resultCount} />
           <Menu compact>
               <Menu.Item as={Button}  name='back' active={this.state.iteration >10} disabled={this.state.iteration<10} onClick={this.handlePageClick.bind(this)}>
                  back
               </Menu.Item>
               <Menu.Item name='Transaktionen'>
-                  Transaktionen {this.state.iteration+1} bis {this.state.iteration+10} von {this.state.resultCount}
+                  Transaktionen {this.state.iteration+1} bis {this.state.iterationEnd} von {this.state.resultCount}
               </Menu.Item>
-              <Menu.Item as={Button} name='for' active={this.state.iteration<this.state.resultCount} disabled={this.state.iteration>this.state.resultCount} onClick={this.handlePageClick.bind(this)}>
+              <Menu.Item as={Button} name='for' active={this.state.iteration<this.state.resultCount} disabled={this.state.iteration+10>=this.state.resultCount} onClick={this.handlePageClick.bind(this)}>
                   forwärts
               </Menu.Item>
           </Menu>
@@ -118,29 +119,32 @@ class AllTransactions extends React.Component {
 
     changeYear(event, data){
       this.setState({selectedYear:data.value});
-//2017-05-11T02:00:00.000Z
-    if(this.state.selectedMonth != ''){
-        this.setState({
-            fromDate: moment(new Date(data.value + "-" + this.state.selectedMonth + "-01" )).toISOString(),
-            toDate: moment(new Date(data.value + "-" + this.state.selectedMonth + "-31" )).toISOString()
-        },()=>{this.downloadNewData()});
+      var startMonth;
+      var endMonth;
+    if(this.state.selectedMonth !== ''){
+        startMonth = this.state.selectedMonth;
+        endMonth = this.state.selectedMonth;
     }else{
-        this.setState({
-            fromDate: moment(new Date(data.value + "-01-01" )).toISOString(),
-            toDate: moment(new Date(data.value + "-12-31" )).toISOString()
-        },()=>{this.downloadNewData()});
+        startMonth = '01';
+        endMonth = '12';
     }
-
+       this.changeProperties(data.value, startMonth, endMonth);
     }
 
     changeMonth(event, data){
         this.setState({selectedMonth:data.value});
-        if(this.state.selectedYear != ''){
-            this.setState({
-                fromDate: moment(new Date(this.state.selectedYear + "-" + data.value + "-01" )).toISOString(),
-                toDate: moment(new Date(this.state.selectedYear + "-" + data.value + "-31" )).toISOString()
-            },()=>{this.downloadNewData()});
+        if(this.state.selectedYear !== ''){
+           this.changeProperties(this.state.selectedYear, data.value, data.value);
         }
+    }
+
+    changeProperties(year, startMonth, endMonth){
+        this.setState({
+            fromDate: moment(new Date(year + "-" + startMonth + "-01" )).toISOString(),
+            toDate: moment(new Date(year + "-" + endMonth + "-31" )).toISOString(),
+            iteration: 0,
+            iterationEnd:0
+        },()=>{this.downloadNewData()});
     }
 
     resetProperties(event, data) {
@@ -148,13 +152,13 @@ class AllTransactions extends React.Component {
             fromDate: '',
             toDate: '',
             iteration: 0,
+            iterationEnd: 0,
             resultCount: 0,
             selectedYear: '',
             selectedMonth: ''
         }, () => {
             this.downloadNewData()
         });
-        console.log("reset");
     }
 
     handlePageClick(event ,{name}){
@@ -169,7 +173,9 @@ class AllTransactions extends React.Component {
     downloadNewData(event ,data){
         getTransactions(this.props.token, this.state.fromDate, this.state.toDate, 10, this.state.iteration)
             .then(({result: transactions, query}) =>
-                this.setState({transactions, resultCount: query.resultcount})
+                this.setState({transactions,
+                    resultCount: query.resultcount,
+                    iterationEnd: this.state.iteration + transactions.length})
             );
     }
 }
@@ -178,6 +184,15 @@ function Status(amount) {
         return <p> - Lastschrift</p>;
     } else {
         return <p> - Gutschrift</p>;
+    }
+}
+
+function CheckTransactions(amount){
+    console.log(amount.name);
+    if(amount.name <= 0){
+        return <p>Keine Transaktionen</p>;
+    }else{
+        return <p></p>;
     }
 }
 

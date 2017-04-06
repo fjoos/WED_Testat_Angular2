@@ -1,8 +1,8 @@
 // @flow
 
 import React from 'react'
-import { getAccountDetails, getAccount, transfer, getTransactions } from '../api'
-import { Dropdown, Grid, Segment, Table, Button, Form } from 'semantic-ui-react'
+import { getAccountDetails, transfer, getTransactions } from '../api'
+import { Grid, Segment, Table, Button, Form } from 'semantic-ui-react'
 import moment from "moment"
 
 
