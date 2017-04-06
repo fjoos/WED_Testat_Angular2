@@ -58,7 +58,7 @@ class AllTransactions extends React.Component {
 
     return (
       <div>All Transactions
-        <Segment>
+        <Segment inverted>
           <Grid columns='equal' stackable>
             <Grid.Column>
             <Dropdown value={this.state.selectedYear} onChange={this.changeYear.bind(this)} placeholder='Select Year' fluid search selection options={this.yearOption} />
