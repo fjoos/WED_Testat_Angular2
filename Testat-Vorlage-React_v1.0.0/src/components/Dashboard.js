@@ -92,8 +92,8 @@ class Dashboard extends React.Component {
                                         <Table.Cell>{moment(date).format("LL")}</Table.Cell>
                                         <Table.Cell>{from}</Table.Cell>
                                         <Table.Cell>{target}</Table.Cell>
-                                        <Table.Cell>{amount}</Table.Cell>
-                                        <Table.Cell>{total}</Table.Cell>
+                                        <Table.Cell>{amount + " CHF"}</Table.Cell>
+                                        <Table.Cell>{total + " CHF"}</Table.Cell>
                                     </Table.Row>
                                 </Table.Body>
                             )}

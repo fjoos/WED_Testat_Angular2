@@ -57,24 +57,25 @@ class AllTransactions extends React.Component {
   render() {
 
     return (
-      <div>All Transactions
+      <div>
+          <h1>Alle Transaktionen</h1>
         <Segment inverted>
           <Grid columns='equal' stackable>
             <Grid.Column>
-            <Dropdown value={this.state.selectedYear} onChange={this.changeYear.bind(this)} placeholder='Select Year' fluid search selection options={this.yearOption} />
+            <Dropdown value={this.state.selectedYear} onChange={this.changeYear.bind(this)} placeholder='Jahr' fluid search selection options={this.yearOption} />
             </Grid.Column>
             <Grid.Column>
-            <Dropdown value={this.state.selectedMonth} onChange={this.changeMonth.bind(this)} placeholder='Select nach Monat' fluid search selection options={this.monthOption} />
+            <Dropdown value={this.state.selectedMonth} onChange={this.changeMonth.bind(this)} placeholder='Monat' fluid search selection options={this.monthOption} />
             </Grid.Column>
               <Grid.Column>
-                 <Button onClick={this.resetProperties.bind(this)}>reset </Button>
+                 <Button onClick={this.resetProperties.bind(this)}>Zurücksetzen</Button>
               </Grid.Column>
           </Grid>
         </Segment>
           <Grid.Column>
               <header><h2>Letzte Transaktionen</h2></header>
 
-              <Table singleLine>
+              <Table singleLine inverted>
                   <Table.Header>
                       <Table.Row>
                           <Table.HeaderCell>Datum</Table.HeaderCell>
@@ -101,13 +102,13 @@ class AllTransactions extends React.Component {
             <CheckTransactions name={this.state.resultCount} />
           <Menu compact>
               <Menu.Item as={Button}  name='back' active={this.state.iteration >10} disabled={this.state.iteration<10} onClick={this.handlePageClick.bind(this)}>
-                 back
+                 Back to the future!
               </Menu.Item>
               <Menu.Item name='Transaktionen'>
                   Transaktionen {this.state.iteration+1} bis {this.state.iterationEnd} von {this.state.resultCount}
               </Menu.Item>
               <Menu.Item as={Button} name='for' active={this.state.iteration<this.state.resultCount} disabled={this.state.iteration+10>=this.state.resultCount} onClick={this.handlePageClick.bind(this)}>
-                  forwärts
+                  Forward to the past!
               </Menu.Item>
           </Menu>
       </div>
