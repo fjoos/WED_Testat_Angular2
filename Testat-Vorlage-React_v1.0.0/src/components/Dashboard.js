@@ -81,8 +81,8 @@ class Dashboard extends React.Component {
                                     <Table.HeaderCell>Saldo</Table.HeaderCell>
                                 </Table.Row>
                             </Table.Header>
-                            {this.state.transactions.map(({from, target, amount, total, date})=>
-                                <Table.Body>
+                            {this.state.transactions.map(({from, target, amount, total, date}, index)=>
+                                <Table.Body key={index}>
                                     <Table.Row>
                                         <Table.Cell>{moment(date).format("LL")}</Table.Cell>
                                         <Table.Cell>{from}</Table.Cell>

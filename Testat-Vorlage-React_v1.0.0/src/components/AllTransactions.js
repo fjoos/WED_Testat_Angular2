@@ -22,8 +22,6 @@ export type Props = {
   user: User,
 }
 class AllTransactions extends React.Component {
-
-
     props: Props;
 
     state ={
@@ -31,7 +29,7 @@ class AllTransactions extends React.Component {
         fromDate: '',
         toDate: '',
         iteration: 0,
-        max: 100,
+        resultCount: 0,
         selectedMonth: '',
         selectedYear: ''
     };
@@ -72,9 +70,9 @@ class AllTransactions extends React.Component {
               </Grid.Column>
           </Grid>
         </Segment>
-
           <Grid.Column>
               <header><h2>Letzte Transaktionen</h2></header>
+
               <Table singleLine>
                   <Table.Header>
                       <Table.Row>
@@ -85,8 +83,8 @@ class AllTransactions extends React.Component {
                           <Table.HeaderCell>Saldo</Table.HeaderCell>
                       </Table.Row>
                   </Table.Header>
-                  {this.state.transactions.map(({from, target, amount, total, date})=>
-                      <Table.Body>
+                  {this.state.transactions.map(({from, target, amount, total, date}, index)=>
+                      <Table.Body key={index}>
                           <Table.Row>
                               <Table.Cell>{moment(date).format("LL")} <Status name={amount} /> </Table.Cell>
                               <Table.Cell>{from}</Table.Cell>
@@ -104,16 +102,12 @@ class AllTransactions extends React.Component {
               <Menu.Item as={Button}  name='back' active={this.state.iteration >10} disabled={this.state.iteration<10} onClick={this.handlePageClick.bind(this)}>
                  back
               </Menu.Item>
-
               <Menu.Item name='Transaktionen'>
-                  Transaktionen von {this.state.iteration+1} bis {this.state.iteration+10} ({this.state.max})
+                  Transaktionen {this.state.iteration+1} bis {this.state.iteration+10} von {this.state.resultCount}
               </Menu.Item>
-
-              <Menu.Menu as={Button} position='right'>
-                  <Menu.Item as={Button} name='for' active={this.state.iteration<this.state.max} disabled={this.state.iteration>this.state.max} onClick={this.handlePageClick.bind(this)}>
-                      forwärts
-                  </Menu.Item>
-              </Menu.Menu>
+              <Menu.Item as={Button} name='for' active={this.state.iteration<this.state.resultCount} disabled={this.state.iteration>this.state.resultCount} onClick={this.handlePageClick.bind(this)}>
+                  forwärts
+              </Menu.Item>
           </Menu>
       </div>
     )
@@ -154,7 +148,7 @@ class AllTransactions extends React.Component {
             fromDate: '',
             toDate: '',
             iteration: 0,
-            max: 0,
+            resultCount: 0,
             selectedYear: '',
             selectedMonth: ''
         }, () => {
@@ -175,15 +169,16 @@ class AllTransactions extends React.Component {
     downloadNewData(event ,data){
         getTransactions(this.props.token, this.state.fromDate, this.state.toDate, 10, this.state.iteration)
             .then(({result: transactions, query}) =>
-                this.setState({transactions, max: query.resultcount})
+                this.setState({transactions, resultCount: query.resultcount})
             );
     }
 }
-function Status(amount){
-    if(amount.name < 0){
+function Status(amount) {
+    if (amount.name < 0) {
         return <p> - Lastschrift</p>;
-    }else{
+    } else {
         return <p> - Gutschrift</p>;
     }
 }
+
 export default AllTransactions
