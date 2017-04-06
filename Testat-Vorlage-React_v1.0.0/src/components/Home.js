@@ -36,7 +36,32 @@ const Home = withRouter(({history, isAuthenticated}: Props) => (
           </Grid.Row>
         </Grid>
       :
-        null
+        <div>
+          <Grid columns='three' divided>
+
+            <Grid.Row>
+              <Grid.Column>
+              </Grid.Column>
+              <Grid.Column>
+                <img width={300} src={require('../../res/logo_hsr_2000px.jpg')}/>
+              </Grid.Column>
+              <Grid.Column>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+              </Grid.Column>
+              <Grid.Column>
+                <img src={require('../../res/Bank.jpg')}/>
+              </Grid.Column>
+              <Grid.Column>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+
+
+        </div>
+
     }
   </div>
 ));
