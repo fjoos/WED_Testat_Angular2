@@ -1,9 +1,11 @@
 // @flow
 
 import React from 'react'
-import { getAccountDetails, getAccount, transfer, getTransactions } from '../api'
-import { Dropdown, Grid, Segment, Table, Button, Form } from 'semantic-ui-react'
+import { getAccountDetails, transfer, getTransactions } from '../api'
+import { Grid, Segment, Table, Button, Form } from 'semantic-ui-react'
 import moment from "moment"
+import { Link } from 'react-router-dom'
+
 
 
 /*
@@ -26,18 +28,20 @@ class Dashboard extends React.Component {
   props: Props;
     state = {
         kontostand: undefined,
-        zielKonto: undefined,
+        zielKonto: 0,
         betrag: 0,
         transactions: []
 
 
     };
-
   render() {
-    const kontoDescription = this.props.user.accountNr+'(CHF: '+this.state.kontostand+'.-)';
-    return (
-        <div>
+      const kontoDescription = this.props.user.accountNr+'(CHF: '+this.state.kontostand+'.-)';
 
+
+
+    return (
+
+        <div>
             <Grid divided='vertically'>
                 <Grid.Row columns={1}>
                     <Grid.Column>
@@ -53,7 +57,7 @@ class Dashboard extends React.Component {
                                     <Form.Dropdown label='Von'
                                                    text={kontoDescription}
                                                    value={this.props.user.accountNr}
-                                                   options={[{key:'1', value:this.state.meinKonto, text:kontoDescription}]}
+                                                   options={[{key:'1', value:this.props.user.accountNr, text:kontoDescription}]}
                                                    type="text"/>
                                     <Form.Input label='Nach'
                                                 value={this.state.zielKonto}
@@ -65,13 +69,14 @@ class Dashboard extends React.Component {
                                                 type="number"
                                                 onChange={this.handleAmountChange}/>
                                 </Form.Group>
-                                <Button type='submit'>Bestätigen</Button>
+                                <Button inverted type='submit'>Bestätigen</Button>
                             </Form>
                         </Segment>
                     </Grid.Column>
                     <Grid.Column>
                         <header><h2>Letzte Transaktionen</h2></header>
-                        <Table singleLine>
+                        <Segment inverted>
+                        <Table singleLine inverted>
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell>Datum</Table.HeaderCell>
@@ -93,15 +98,16 @@ class Dashboard extends React.Component {
                                 </Table.Body>
                             )}
                         </Table>
+                        <Link to="/transactions"><Button inverted>Alle Transaktionen</Button></Link>
+                        </Segment>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
 
-
         </div>
 
+          );
 
-    )
   }
 
     handleTransactionFromTo = (event) => {
@@ -117,8 +123,9 @@ class Dashboard extends React.Component {
                   .then(({amount}) =>
                       this.setState({kontostand: amount})
                   );
-          })
-          .catch(console.log("There was an Error!"))
+          }).catch(console.log("There was an Error!"))
+        this.setState({zielKonto: 0});
+        this.setState({betrag: 0});
     };
 
     handleTransactionTargetChange = (event) => {

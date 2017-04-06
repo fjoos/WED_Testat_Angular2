@@ -1,38 +1,45 @@
 // @flow
 
 import React from 'react'
-import { Link, withRouter } from 'react-router-dom'
-import { Segment, Button, Divider, Message } from 'semantic-ui-react'
+import {  withRouter } from 'react-router-dom'
+import { Message, Button, Segment, Grid } from 'semantic-ui-react'
 
 export type Props = {
   isAuthenticated: boolean,
 }
 
 
-
 const Home = withRouter(({history, isAuthenticated}: Props) => (
   <div>
     { isAuthenticated
-      ? <div>
+      ?
+        <Grid columns='three' divided>
+
+          <Grid.Row>
+
+            <Grid.Column>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Segment inverted>
           <Message
               floating
               content={'Willkommen zurück!'}
           />
-          <Button primary fluid
+          <Button inverted fluid
                   onClick={()=>{history.push('/dashboard')}}>Zum Dashborad</Button>
-        </div>
-      :
-
-        <Segment padded>
-          <Button primary fluid
-                  onClick={()=>{history.push('/login')}}>Einloggen</Button>
-          <Divider horizontal>Falls Sie noch keinen Account besitzen können Sie sich hier registrieren:</Divider>
-          <Button secondary fluid
-                  onClick={()=>{history.push('/signup')}}>Registrieren</Button>
         </Segment>
+            </Grid.Column>
+
+            <Grid.Column>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      :
+        null
     }
   </div>
-))
+));
 
 
 export default Home
