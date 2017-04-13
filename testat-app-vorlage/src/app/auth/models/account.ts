@@ -14,7 +14,7 @@ export class Account {
       login: this.login,
       firstname: this.firstname,
       lastname: this.lastname,
-      accountNr: this.accountNr
+      accountNr: this.accountNr,
     };
   }
 }

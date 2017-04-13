@@ -6,20 +6,20 @@
       Von:
       <div>
         <select>
-          <option value="Mein Konto">Mein Konto</option>
+          <option value="Mein Konto">{{user.accountNr}}({{user.amount}} Chf)</option>
         </select>
       </div>
     </div>
     <div>
       Zu:
       <div>
-        <input placeholder="Zu" type="text" name="target" />
+        <input placeholder="Zu" type="text" name="target" ngModel/>
       </div>
     </div>
     <div>
       Betrag:
       <div>
-        <input placeholder="Betrag" type="number" name="amount" />
+        <input placeholder="Betrag" type="number" name="amount" ngModel/>
       </div>
     </div>
     <button>Überweisen</button>
