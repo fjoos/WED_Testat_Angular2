@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import {NgForm} from "@angular/forms";
 
 import {NavigationService} from "../../core/services/navigation.service";
+import {TransactionInfo} from "../models/transaction-info";
 
 
 @Component({
@@ -12,5 +13,6 @@ import {NavigationService} from "../../core/services/navigation.service";
 })
 
 export class DashboardComponent{
+
 
 }

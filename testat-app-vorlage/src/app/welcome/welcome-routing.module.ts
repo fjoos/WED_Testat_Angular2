@@ -11,7 +11,7 @@ const appRoutes: Routes = [
     path: 'welcome',
     component: WelcomeComponent,
     // TODO: Add guard and routing (Register/Login) here...
-    canActivate: [LoggedInGuard],
+   // canActivate: [LoggedInGuard],
     //canLoad: [NotLoggedInGuard],
     children: [
       { path: '', component: LoginComponent},

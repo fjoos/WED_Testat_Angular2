@@ -1,1 +1,49 @@
 <h1> Home </h1>
+
+<div>
+  <form #f="ngForm" (ngSubmit)="doTransact(f)">
+    <div>
+      Von:
+      <div>
+        <select>
+          <option value="Mein Konto">Mein Konto</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      Zu:
+      <div>
+        <input placeholder="Zu" type="text" name="target" />
+      </div>
+    </div>
+    <div>
+      Betrag:
+      <div>
+        <input placeholder="Betrag" type="number" name="amount" />
+      </div>
+    </div>
+    <button>Überweisen</button>
+  </form>
+</div>
+
+<div>
+  <header><h2>Letzte Transaktionen</h2></header>
+  <table>
+    <thead>
+    <th>Datum</th>
+    <th>Von</th>
+    <th>Nach</th>
+    <th>Betrag</th>
+    <th>Saldo</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

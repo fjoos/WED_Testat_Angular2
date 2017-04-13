@@ -7,6 +7,8 @@ import {DashboardComponent} from "./components/dashboard.component";
 import {AuthModule} from "../auth/auth.module";
 import {TransactionComponent} from "./components/transaction.component";
 import {HomeComponent} from "./components/home.component";
+import {HomeService} from "./services"
+import {HomeResourceService} from "./resources"
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import {HomeComponent} from "./components/home.component";
   ],
   providers: [
     // DI Providers (Services, Tokens, Factories...), may be instantiated multiple times
+    HomeService, HomeResourceService
   ]
 })
 export class DashboardModule {
