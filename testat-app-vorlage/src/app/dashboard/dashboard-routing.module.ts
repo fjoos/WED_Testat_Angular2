@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard.component';
 import { LogoutComponent } from "../auth/components";
 import { TransactionComponent } from "./components/transaction.component";
+import { HomeComponent } from "./components/home.component";
 
 
 const appRoutes: Routes = [
