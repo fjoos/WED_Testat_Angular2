@@ -9,6 +9,8 @@ import {TransactionComponent} from "./components/transaction.component";
 import {HomeComponent} from "./components/home.component";
 import {HomeService} from "./services"
 import {HomeResourceService} from "./resources"
+import {TransactionService} from "./services/transaction.service";
+import {TransactionResourceService} from "./resources/transaction-resource.service";
 
 
 @NgModule({
@@ -25,7 +27,7 @@ import {HomeResourceService} from "./resources"
   ],
   providers: [
     // DI Providers (Services, Tokens, Factories...), may be instantiated multiple times
-    HomeService, HomeResourceService
+    HomeService, HomeResourceService, TransactionService, TransactionResourceService
   ]
 })
 export class DashboardModule {

@@ -51,8 +51,8 @@ export class AuthService {
     console.log("logout-----");
   }
 
-  public loggedIn() {
-    console.log("loggedin: " + this.tokenStore.localToken);
-    return this.tokenStore.localToken != null;
+  public loggedIn():boolean {
+    console.log("loggedin: " + this.tokenStore.storedValue);
+    return !!this.tokenStore.storedValue;
   }
 }

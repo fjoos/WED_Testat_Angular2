@@ -30,8 +30,8 @@
     <th>Betrag</th>
     <th>Total</th>
   </tr>
-  <tr>
-    <td>Jill</td>
+  <tr *ngFor="let res of transactions">
+    <td>{{res.date}}</td>
     <td>Smith</td>
     <td>50</td>
   </tr>

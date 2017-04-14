@@ -1,9 +1,11 @@
 import {Router} from "@angular/router";
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {NgForm} from "@angular/forms";
 
 import {NavigationService} from "../../core/services/navigation.service";
-
+import {Result} from "../models/Result";
+import {TransactionService} from "../services/transaction.service";
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'transaction',
@@ -11,6 +13,28 @@ import {NavigationService} from "../../core/services/navigation.service";
   styleUrls: ['transaction.component.scss']
 })
 
-export class TransactionComponent{
+export class TransactionComponent implements OnInit, OnDestroy {
+  result: Result;
+  transactions: Result[] = [];
+  fromDate: Date;
+  toDate: Date;
 
+
+  transactionsRecievedSubscription:Subscription;
+
+  constructor(private transactionService: TransactionService) {
+  }
+
+  ngOnInit(): void{
+    this.transactionsRecievedSubscription = this.transactionService.transactionsRecieved.subscribe(
+      (result) => this.transactions = result);
+
+    this.transactionService.getFiltered("2016-01-10T14:00:00.000Z", "2016-12-10T14:00:00.000Z");
+  }
+
+  ngOnDestroy(): void {
+    if (this.transactionsRecievedSubscription) {
+      this.transactionsRecievedSubscription.unsubscribe();
+    }
+  }
 }
