@@ -1,28 +1,31 @@
 import {Injectable, EventEmitter} from '@angular/core';
 
-import {TransactionInfo} from "../models";
+import {TransactionInfo, AccountInfo, Result} from "../models";
 import {HomeResourceService} from "../resources";
-import {AccountInfo} from "../models/accountInfo";
-import {SecurityTokenStore} from "../../auth/services/credential-management/security-token-store";
 
 
 @Injectable()
 export class HomeService {
 
-  public get authenticatedUser():AccountInfo {
-    return this.authUser;
-  }
+  transactionsRecieved: EventEmitter<Result[]>  = new EventEmitter<Result[]>();
 
-  private authUser:AccountInfo = null;
+  authenticatedUserChange: EventEmitter<AccountInfo> = new EventEmitter<AccountInfo>();
 
 
   constructor(private resource:HomeResourceService) {
-
   }
 
 
   public transact(transactModel: TransactionInfo):void{
-    this.resource.transact(transactModel);
+    this.resource.transact(transactModel).subscribe();
+  }
+
+  public lastTransactions():void{
+    this.resource.getLastTransacts().subscribe((data) => this.transactionsRecieved.emit(data));
+  }
+
+  public authenticatedUser():void {
+    this.resource.getUserInfo().subscribe((data) => this.authenticatedUserChange.emit(data));
   }
 
 

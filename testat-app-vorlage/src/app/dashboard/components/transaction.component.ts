@@ -1,8 +1,5 @@
-import {Router} from "@angular/router";
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {NgForm} from "@angular/forms";
 
-import {NavigationService} from "../../core/services/navigation.service";
 import {Result} from "../models/Result";
 import {TransactionService} from "../services/transaction.service";
 import {Subscription} from 'rxjs';

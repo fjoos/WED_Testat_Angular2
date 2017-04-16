@@ -3,14 +3,10 @@ import {NgModule, ModuleWithProviders} from '@angular/core';
 import {SharedModule} from "../shared/shared.module";
 
 import {DashbaordRoutingModule} from "./dashboard-routing.module";
-import {DashboardComponent} from "./components/dashboard.component";
 import {AuthModule} from "../auth/auth.module";
-import {TransactionComponent} from "./components/transaction.component";
-import {HomeComponent} from "./components/home.component";
-import {HomeService} from "./services"
-import {HomeResourceService} from "./resources"
-import {TransactionService} from "./services/transaction.service";
-import {TransactionResourceService} from "./resources/transaction-resource.service";
+import {TransactionComponent, HomeComponent, DashboardComponent} from "./components";
+import {HomeService, TransactionService} from "./services"
+import {HomeResourceService, TransactionResourceService} from "./resources"
 
 
 @NgModule({

@@ -31,18 +31,10 @@
     <th>Total</th>
   </tr>
   <tr *ngFor="let res of transactions">
-    <td>{{res.date}}</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
+    <td>{{res.date.toDateString()}}</td>
+    <td>{{res.from}}</td>
+    <td>{{res.target}}</td>
+    <td>{{res.amount}}</td>
+    <td>{{res.total}}</td>
   </tr>
 </table>

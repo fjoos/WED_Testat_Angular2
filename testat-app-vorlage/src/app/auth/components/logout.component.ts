@@ -19,6 +19,7 @@ export class LogoutComponent implements OnInit {
 
   ngOnInit() {
     this.user = this.autSvc.authenticatedUser;
+
     this.autSvc.authenticatedUserChange.subscribe(
       (credentials) => {
         if (!credentials) {

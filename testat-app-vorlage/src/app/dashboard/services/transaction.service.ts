@@ -1,8 +1,7 @@
 import {Injectable, EventEmitter} from '@angular/core';
 
-import {TransactionInfo} from "../models";
 import {TransactionResourceService} from "../resources";
-import {Result} from "../models/Result";
+import {Result} from "../models";
 
 
 @Injectable()

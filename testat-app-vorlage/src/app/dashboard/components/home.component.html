@@ -6,7 +6,7 @@
       Von:
       <div>
         <select>
-          <option value="Mein Konto">{{user.accountNr}}({{user.amount}} Chf)</option>
+          <option value="Mein Konto">{{user.accountNr}} ({{user.amount}}.-)</option>
         </select>
       </div>
     </div>
@@ -37,13 +37,13 @@
     <th>Saldo</th>
     </thead>
     <tbody>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
+      <tr *ngFor="let res of transactions">
+        <td>{{res.date.toDateString()}}</td>
+        <td>{{res.from}}</td>
+        <td>{{res.target}}</td>
+        <td>{{res.amount}}</td>
+        <td>{{res.total}}</td>
+      </tr>
     </tbody>
   </table>
 </div>

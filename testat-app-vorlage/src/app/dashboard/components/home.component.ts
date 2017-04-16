@@ -1,11 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {NgForm} from "@angular/forms";
 
 import {HomeService} from "../services/home.service";
-import {TransactionInfo} from "../models/transaction-info";
-import {Account} from "../../auth/models"
-import {AuthService} from "../../auth/services/auth.service";
-
+import {TransactionInfo, Result, AccountInfo} from "../models";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'homeBoard',
@@ -15,27 +13,34 @@ import {AuthService} from "../../auth/services/auth.service";
 
 })
 
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit, OnDestroy {
 
-  public user:Account;
+  user: AccountInfo;
+  result: Result;
+  transactions: Result[] = [];
 
+  transactionsRecievedSubscription:Subscription;
+  authenticatedUserChangeSubscription:Subscription;
 
-  public target:string;
-  public amount:number;
-
-  public isProcessing:boolean = false;
-
-  constructor(private autSvc:AuthService, private homeSRV:HomeService) {
+  constructor(private homeSRV:HomeService) {
   }
 
   ngOnInit() {
-    this.user = this.autSvc.authenticatedUser;
+    this.transactionsRecievedSubscription = this.homeSRV.transactionsRecieved.subscribe(
+      (result) => this.transactions = result);
+
+    this.authenticatedUserChangeSubscription = this.homeSRV.authenticatedUserChange.subscribe(
+      (user) => this.user = user);
+
+     this.homeSRV.authenticatedUser();
+
+
+    this.homeSRV.lastTransactions();
   }
 
 
   public doTransact(f: NgForm):boolean {
     if (f.valid) {
-      this.isProcessing = true;
       this.homeSRV.transact(new TransactionInfo(
         f.value.target,
         f.value.amount));
@@ -43,4 +48,16 @@ export class HomeComponent implements OnInit{
     }
     return false;
   }
+
+  ngOnDestroy(): void {
+    if (this.transactionsRecievedSubscription) {
+      this.transactionsRecievedSubscription.unsubscribe();
+    }
+
+    if (this.authenticatedUserChangeSubscription) {
+      this.authenticatedUserChangeSubscription.unsubscribe();
+    }
+
+  }
+
 }

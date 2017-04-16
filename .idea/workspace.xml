@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7313e25c-437c-402a-8bd8-0d2ed5ba0cb4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/Result.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/transaction-resource.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/transaction.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/accountInfo.ts" />
+    <list default="true" id="7313e25c-437c-402a-8bd8-0d2ed5ba0cb4" name="Default" comment="React Fertig">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/models/account.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/models/account.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth.service.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/credential-management/security-token-store.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/credential-management/security-token-store.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/index.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.html" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard-routing.module.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard-routing.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/index.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/accountInfo.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/accountInfo.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/home.service.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/home.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.html" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/index.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/transaction.service.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/transaction.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,105 +35,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="transaction-resource.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/transaction-resource.service.ts">
+      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#200#264#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security-token-store.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/credential-management/security-token-store.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="-269">
+              <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loggedin-guard.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/loggedin-guard.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.service.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="54" column="58" lean-forward="false" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notloggedin-guard.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/notloggedin-guard.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="101" column="135" lean-forward="false" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="135" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transaction.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/transaction.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transaction.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth-request-options.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/resources/auth-request-options.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -163,12 +67,8 @@
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth-guard.service.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/auth.module.ts" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/dashboard.component.html" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/index.ts" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/core/services/navigation.service.ts" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/notloggedin-guard.service.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/credential-management/security-token-store.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/welcome/welcome-routing.module.ts" />
@@ -183,19 +83,28 @@
         <option value="$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/components/AllTransactions.js" />
         <option value="$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/components/Dashboard.js" />
         <option value="$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/components/Home.js" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard-routing.module.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/login.component.html" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.html" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.html" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts" />
-        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html" />
         <option value="$PROJECT_DIR$/Server/readme.md" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/models/account.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/accountInfo.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/index.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/transaction.service.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/index.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts" />
         <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/home.service.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard-routing.module.ts" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.html" />
+        <option value="$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/login.component.ts" />
       </list>
     </option>
   </component>
@@ -243,21 +152,21 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -267,29 +176,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testat-app-vorlage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -300,18 +191,14 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -326,18 +213,14 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -359,11 +242,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -389,11 +272,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -419,11 +302,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -449,11 +332,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -479,11 +362,67 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testat-app-vorlage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WED3Testat1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WED3Testat1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testat-app-vorlage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WED3Testat1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -505,11 +444,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -535,11 +474,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
+              <option name="myItemId" value="WED3Testat1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -559,55 +498,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="credential-management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testat-app-vorlage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testat_Angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -651,13 +542,14 @@
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/auth/models/account.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/home.service.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth.service.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/credential-management/security-token-store.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/index.ts</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -665,7 +557,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/accountInfo.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/Result.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/transaction-resource.service.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/transaction.service.ts</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -1008,19 +902,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76313000" />
+    <option name="totallyTimeSpent" value="81721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25818452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17021276" sideWeight="0.4330357" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17021276" sideWeight="0.56696427" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.4174107" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2111293" sideWeight="0.5141369" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17021276" sideWeight="0.56696427" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.67782736" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2111293" sideWeight="0.5066964" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2111293" sideWeight="0.4858631" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1062,53 +957,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/node_modules/react-dom/lib/ReactHostOperationHistoryHook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
-          <caret line="137" column="61" lean-forward="false" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/components/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="95" column="57" lean-forward="false" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/res/Bank.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testat-Vorlage-React_v1.0.0/src/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1179,129 +1027,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/transaction-info.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/transactionRes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/resources/resource-base.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="34" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/dashboard.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1321,46 +1050,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/resources/auth-request-options.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/models/account.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/auth.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-498">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1385,41 +1076,300 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth.service.ts">
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="54" column="58" lean-forward="false" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/models/account.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/credential-management/security-token-store.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/accountInfo.ts">
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/services/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="187">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/Result.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/readme.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="135" lean-forward="false" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="135" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/transaction.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/services/home.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="119">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#55#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/transaction-resource.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#200#264#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/transaction-info.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/transactionRes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/models/accountInfo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#59#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#60#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#59#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="89" lean-forward="false" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/logout.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="99" lean-forward="false" selection-start-line="5" selection-start-column="99" selection-end-line="5" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/components/register.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/dashboard-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/core/services/navigation.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/auth/auth.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
