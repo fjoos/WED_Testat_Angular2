@@ -10,7 +10,7 @@ import {AppComponent} from './app.component';
 
 import {AppRoutingModule} from "./app-routing.module";
 import {AuthModule} from "./auth/auth.module";
-
+import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,6 +24,7 @@ import {AuthModule} from "./auth/auth.module";
     CoreModule.forRoot(),
     AuthModule.forRoot(),
     WelcomeModule.forRoot(),
+    AlertModule.forRoot(),
 
     AppRoutingModule
   ],
