@@ -1,49 +1,51 @@
-<h1> Home </h1>
+<div class="container-fluid">
+  <h1> Home </h1>
 
-<div>
-  <form #f="ngForm" (ngSubmit)="doTransact(f)">
-    <div>
-      Von:
-      <div *ngIf="user">
-        <select>
-          <option value="Mein Konto">{{user.accountNr}} ({{user.amount}}.-)</option>
-        </select>
-      </div>
-    </div>
-    <div>
-      Zu:
+  <div>
+    <form #f="ngForm" (ngSubmit)="doTransact(f)">
       <div>
-        <input placeholder="Zu" type="text" name="target" ngModel/>
+        Von:
+        <div *ngIf="user">
+          <select>
+            <option value="Mein Konto">{{user.accountNr}} ({{user.amount}}.-)</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <div>
-      Betrag:
       <div>
-        <input placeholder="Betrag" type="number" name="amount" ngModel/>
+        Zu:
+        <div>
+          <input placeholder="Zu" type="text" name="target" ngModel/>
+        </div>
       </div>
-    </div>
-    <button>Überweisen</button>
-  </form>
-</div>
+      <div>
+        Betrag:
+        <div>
+          <input placeholder="Betrag" type="number" name="amount" ngModel/>
+        </div>
+      </div>
+      <button>Überweisen</button>
+    </form>
+  </div>
 
-<div>
-  <header><h2>Letzte Transaktionen</h2></header>
-  <table>
-    <thead>
-    <th>Datum</th>
-    <th>Von</th>
-    <th>Nach</th>
-    <th>Betrag</th>
-    <th>Saldo</th>
-    </thead>
-    <tbody>
-      <tr *ngFor="let res of transactions">
-        <td>{{res.date.toDateString()}}</td>
-        <td>{{res.from}}</td>
-        <td>{{res.target}}</td>
-        <td>{{res.amount}}</td>
-        <td>{{res.total}}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+    <header><h2>Letzte Transaktionen</h2></header>
+    <table>
+      <thead>
+      <th>Datum</th>
+      <th>Von</th>
+      <th>Nach</th>
+      <th>Betrag</th>
+      <th>Saldo</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let res of transactions">
+          <td>{{res.date.toDateString()}}</td>
+          <td>{{res.from}}</td>
+          <td>{{res.target}}</td>
+          <td>{{res.amount}}</td>
+          <td>{{res.total}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
