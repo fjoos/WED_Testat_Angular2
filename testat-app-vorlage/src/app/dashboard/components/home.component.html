@@ -4,7 +4,7 @@
   <form #f="ngForm" (ngSubmit)="doTransact(f)">
     <div>
       Von:
-      <div>
+      <div *ngIf="user">
         <select>
           <option value="Mein Konto">{{user.accountNr}} ({{user.amount}}.-)</option>
         </select>
