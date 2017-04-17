@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7313e25c-437c-402a-8bd8-0d2ed5ba0cb4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/components/transaction.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts" afterPath="$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -98,7 +95,7 @@
       <file leaf-file-name="home-resource.service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="432">
               <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
               <folding />
             </state>
@@ -1525,11 +1522,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492422744969</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added filters">
+      <created>1492424840022</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1492424840022</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88094000" />
+    <option name="totallyTimeSpent" value="88713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1615,7 +1619,8 @@
     <MESSAGE value="bugfixes" />
     <MESSAGE value="enable bootstrap" />
     <MESSAGE value="bootstrap enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="bootstrap enabled" />
+    <MESSAGE value="added filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="added filters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2027,7 +2032,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testat-app-vorlage/src/app/dashboard/resources/home-resource.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
+        <state relative-caret-position="432">
           <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
           <folding />
         </state>
