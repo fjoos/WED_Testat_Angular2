@@ -25,7 +25,7 @@ export class HomeResourceService extends ResourceBase {
   }
 
   public getLastTransacts():Observable<Result[]> {
-    return this.get(`/accounts/transactions?fromDate=2016-05-11T02:00:00.000Z&toDate=2016-12-11T02:00:00.000Z&count=3`)
+     return this.get(`/accounts/transactions?count=3`)
       .map((response: Response) => {
         let dto = response.json();
         if (dto && dto.result && dto.result.length) {

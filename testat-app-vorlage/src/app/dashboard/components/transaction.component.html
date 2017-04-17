@@ -1,24 +1,24 @@
 <h1>Transactions</h1>
-<select>
+<select (change)="onChangeYear($event.target.value)" >
   <option value="2017">2017</option>
   <option value="2016">2016</option>
   <option value="2015">2015</option>
 </select>
 
 
-<select>
-  <option value="Januar">Januar</option>
-  <option value="Februar">Februar</option>
-  <option value="März">März</option>
-  <option value="April">April</option>
-  <option value="Mai">Mai</option>
-  <option value="Juni">Juni</option>
-  <option value="Juli">Juli</option>
-  <option value="August">August</option>
-  <option value="September">September</option>
-  <option value="Oktober">Oktober</option>
-  <option value="November">November</option>
-  <option value="Dezember">Dezember</option>
+<select (change)="onChangeMonth($event.target.value)" >
+  <option value="01">Januar</option>
+  <option value="02">Februar</option>
+  <option value="03">März</option>
+  <option value="04">April</option>
+  <option value="05">Mai</option>
+  <option value="06">Juni</option>
+  <option value="07">Juli</option>
+  <option value="08">August</option>
+  <option value="09">September</option>
+  <option value="10">Oktober</option>
+  <option value="11">November</option>
+  <option value="12">Dezember</option>
 </select>
 
 <table>

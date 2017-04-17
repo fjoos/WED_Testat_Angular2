@@ -15,6 +15,8 @@ export class TransactionComponent implements OnInit, OnDestroy {
   transactions: Result[] = [];
   fromDate: Date;
   toDate: Date;
+  month: String = "01";
+  year : String = "2017";
 
 
   transactionsRecievedSubscription:Subscription;
@@ -26,7 +28,7 @@ export class TransactionComponent implements OnInit, OnDestroy {
     this.transactionsRecievedSubscription = this.transactionService.transactionsRecieved.subscribe(
       (result) => this.transactions = result);
 
-    this.transactionService.getFiltered("2016-01-10T14:00:00.000Z", "2016-12-10T14:00:00.000Z");
+    this.transactionService.getFiltered(this.year + "-" + this.month + "-01T14:00:00.000Z", this.year + "-" + this.month + "-31T14:00:00.000Z");
   }
 
   ngOnDestroy(): void {
@@ -34,4 +36,18 @@ export class TransactionComponent implements OnInit, OnDestroy {
       this.transactionsRecievedSubscription.unsubscribe();
     }
   }
+
+  onChangeMonth(month) {
+    this.month = month;
+    this.downloadData();
+  }
+  onChangeYear(year){
+    this.year = year;
+    this.downloadData();
+  }
+
+  downloadData(){
+    this.transactionService.getFiltered(this.year + "-" + this.month + "-01T14:00:00.000Z", this.year + "-" + this.month + "-31T14:00:00.000Z");
+  }
+
 }
