@@ -1,43 +1,44 @@
-<div class="container-fluid">
-  <h1> Home </h1>
 
-  <div>
-    <form #f="ngForm" (ngSubmit)="doTransact(f)">
+<div class="container">
+  <h1>The Bank of HSR</h1>
+  <div class="row">
+    <div class="col-md-4">
       <div>
-        Von:
-        <div *ngIf="user">
-          <select>
-            <option value="Mein Konto">{{user.accountNr}} ({{user.amount}}.-)</option>
-          </select>
-        </div>
+        <form #f="ngForm" (ngSubmit)="doTransact(f)">
+          <label for="von">Mein Konto</label>
+          <div class="form-group" id="von" *ngIf="user">
+            <select class="form-control" data-style="btn-info">
+              <option value="Mein Konto">{{user.accountNr}} ({{user.amount}}.-)</option>
+            </select>
+          </div>
+          <label for="zu">Zielkonto</label>
+          <div class="form-group" id="zu">
+            <div>
+              <input class="form-control" placeholder="Zu" type="text" name="target" ngModel/>
+            </div>
+          </div>
+          <label for="amount">Betrag</label>
+          <div class="form-group" id="amount">
+            <div>
+              <input class="form-control" placeholder="Betrag" type="number" name="amount" ngModel/>
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="javascript:location.reload();">Überweisen</button>
+        </form>
       </div>
-      <div>
-        Zu:
-        <div>
-          <input placeholder="Zu" type="text" name="target" ngModel/>
-        </div>
-      </div>
-      <div>
-        Betrag:
-        <div>
-          <input placeholder="Betrag" type="number" name="amount" ngModel/>
-        </div>
-      </div>
-      <button>Überweisen</button>
-    </form>
-  </div>
-
-  <div>
-    <header><h2>Letzte Transaktionen</h2></header>
-    <table>
-      <thead>
-      <th>Datum</th>
-      <th>Von</th>
-      <th>Nach</th>
-      <th>Betrag</th>
-      <th>Saldo</th>
-      </thead>
-      <tbody>
+    </div>
+    <div class="col-md-8">
+      <table class="table table-striped">
+        <thead>
+        <tr class="info">
+          <th>Datum</th>
+          <th>Von</th>
+          <th>Nach</th>
+          <th>Betrag</th>
+          <th>Saldo</th>
+        </tr>
+        </thead>
+        <tbody>
         <tr *ngFor="let res of transactions">
           <td>{{res.date.toDateString()}}</td>
           <td>{{res.from}}</td>
@@ -45,7 +46,15 @@
           <td>{{res.amount}}</td>
           <td>{{res.total}}</td>
         </tr>
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
+
+
+
+
+
+
+

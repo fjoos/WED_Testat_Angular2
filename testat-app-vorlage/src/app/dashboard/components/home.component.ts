@@ -4,6 +4,7 @@ import {NgForm} from "@angular/forms";
 import {HomeService} from "../services/home.service";
 import {TransactionInfo, Result, AccountInfo} from "../models";
 import {Subscription} from "rxjs";
+import {after} from "selenium-webdriver/testing";
 
 @Component({
   selector: 'homeBoard',
@@ -33,9 +34,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       (user) => this.user = user);
 
      this.homeSRV.authenticatedUser();
-
-
-    this.homeSRV.lastTransactions();
+     this.homeSRV.lastTransactions();
   }
 
 
@@ -43,7 +42,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (f.valid) {
       this.homeSRV.transact(new TransactionInfo(
         f.value.target,
-        f.value.amount));
+        f.value.amount)
+      );
       console.log("transacted!");
     }
     return false;

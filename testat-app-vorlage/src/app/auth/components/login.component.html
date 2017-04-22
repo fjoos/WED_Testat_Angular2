@@ -1,23 +1,25 @@
-<div class="container-fluid">
-<p> Welcome to...</p>
-  <!-- TODO: Add ng2 specific directives/validation settings and add styling -->
-  <form  #f="ngForm" (ngSubmit)="f.form.valid && doLogin(f)">
-    <div class="form-group">
-      User name:
-      <div>
-        <input pattern=".{3,}" class="form-control" placeholder="User" type="text" name="login" ngModel required/>
-        <small class="form-text text-muted">Please specify your login, at least three characters.</small>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+      <div class="form-login">
+        <h4>Welcome to the "Bank of HSR"</h4>
+        <form #f="ngForm" (ngSubmit)="f.form.valid && doLogin(f)">
+          <div class="form-group">
+            <div>
+              <input pattern=".{3,}" class="form-control" placeholder="Username" type="text" name="login" ngModel required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <input pattern=".{3,}"  class="form-control" placeholder="Password" type="password" name="password" ngModel required />
+            </div>
+          </div>
+            <button class="btn btn-primary">Login</button>
+            <small>oder</small>
+            <a class="btn btn-primary" href="/welcome/register" role="button">Registrieren</a>
+        </form>
       </div>
     </div>
-    <div class="form-group">
-      Password:
-      <div>
-        <input pattern=".{3,}"  class="form-control" placeholder="Password" type="password" name="password" ngModel required />
-        <small class="form-text text-muted">Please specify your login, at least three characters.</small>
-      </div>
-    </div>
-    <button class="btn btn-primary">Login</button>
-  </form>
-  <small>oder</small><br />
-  <a class="btn btn-primary" href="/welcome/register" role="button">Registrieren</a>
+  </div>
 </div>
